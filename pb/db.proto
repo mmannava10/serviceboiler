@@ -1,0 +1,14 @@
+syntax = "proto3";
+package db;
+
+enum DBTrigger {
+    TRIGGER_1 = 0;
+    TRIGGER_2 = 1;
+    TRIGGER_3 = 2;
+}
+
+message DatabaseTrigger {
+    DBTrigger trigger = 1;
+    string data1 = 2;
+    repeated string data2 = 3;
+}
